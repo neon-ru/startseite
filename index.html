@@ -39,29 +39,41 @@
         .cta-container {
             display: flex;
             justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
             margin-bottom: 20px;
         }
-        .instagram-btn {
+        .social-btn {
             display: inline-flex;
             align-items: center;
             gap: 10px;
-            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
             color: #ffffff;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: bold;
-            padding: 16px 32px;
+            padding: 14px 28px;
             border-radius: 50px;
             text-decoration: none;
-            box-shadow: 0 4px 15px rgba(220, 39, 67, 0.4);
             transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .instagram-btn {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            box-shadow: 0 4px 15px rgba(220, 39, 67, 0.4);
         }
         .instagram-btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(220, 39, 67, 0.6);
         }
-        .instagram-btn svg {
-            width: 24px;
-            height: 24px;
+        .facebook-btn {
+            background: linear-gradient(45deg, #1877f2 0%, #0056b3 100%);
+            box-shadow: 0 4px 15px rgba(24, 119, 242, 0.4);
+        }
+        .facebook-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(24, 119, 242, 0.6);
+        }
+        .social-btn svg {
+            width: 22px;
+            height: 22px;
             fill: currentColor;
         }
         main {
@@ -71,14 +83,15 @@
             padding: 40px 20px;
             width: 100%;
         }
-        .impressum {
+        .legal-section {
             background-color: #1e1e1e;
             padding: 30px;
             border-radius: 12px;
             border: 1px solid #2a2a2a;
             line-height: 1.6;
+            margin-bottom: 30px;
         }
-        .impressum h2 {
+        .legal-section h2 {
             color: #ffffff;
             font-size: 1.5rem;
             margin-bottom: 20px;
@@ -86,16 +99,26 @@
             padding-bottom: 8px;
             display: inline-block;
         }
-        .impressum h3 {
+        .legal-section h3 {
             color: #ffffff;
             font-size: 1.1rem;
             margin-top: 20px;
             margin-bottom: 8px;
         }
-        .impressum p {
+        .legal-section p, .legal-section ul {
             color: #cccccc;
             margin-bottom: 12px;
             font-size: 0.95rem;
+        }
+        .legal-section ul {
+            margin-left: 20px;
+        }
+        .legal-section a {
+            color: #dc2743;
+            text-decoration: none;
+        }
+        .legal-section a:hover {
+            text-decoration: underline;
         }
         footer {
             text-align: center;
@@ -112,49 +135,104 @@
         <h1>Boxclub Kaufbeuren e.V.</h1>
         <p class="subtitle">Willkommen auf unserer offiziellen Webseite</p>
         
-        <!-- Instagram Button oben in der Mitte -->
+        <!-- Social Media Buttons -->
         <div class="cta-container">
-            <a href="https://www.instagram.com/boxclub_kaufbeuren/" target="_blank" rel="noopener noreferrer" class="instagram-btn">
+            <a href="https://www.instagram.com/boxclub_kaufbeuren/" target="_blank" rel="noopener noreferrer" class="social-btn instagram-btn">
                 <svg viewBox="0 0 24 24">
                     <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                 </svg>
-                Besucht uns auf Instagram
+                Instagram
+            </a>
+            
+            <a href="https://www.facebook.com/boxclubkf/" target="_blank" rel="noopener noreferrer" class="social-btn facebook-btn">
+                <svg viewBox="0 0 24 24">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+                Facebook
             </a>
         </div>
     </header>
 
     <main>
-        <section class="impressum">
+        <!-- Impressum -->
+        <section class="legal-section">
             <h2>Impressum</h2>
 
-            <h3>Angaben gemäß § 5 DDG</h3>
             <p>
-                <strong>Box Club Kaufbeuren e. V.</strong><br>
+                <strong>Boxclub Kaufbeuren e.V.</strong><br>
                 Porschestraße 22<br>
-                87600 Kaufbeuren<br>
-                Deutschland
+                87600 Kaufbeuren
             </p>
 
-            <h3>Vertreten durch</h3>
             <p>
-                Vertretungsberechtigter Vorstand: Roman Slobodyanikov
+                <strong>Vereinsregister:</strong> VR 11072<br>
+                <strong>Registergericht:</strong> Amtsgericht Kempten (Allgäu)
+            </p>
+
+            <p>
+                <strong>Vertreten durch:</strong><br>
+                Roman Slobodyanikov
             </p>
 
             <h3>Kontakt</h3>
             <p>
-                E-Mail: bc-kaufbeuren@gmx.de<br>
-                Telefon: +49 (0) 176 64979152
+                <strong>Telefon:</strong> +4917664979152<br>
+                <strong>E-Mail:</strong> <a href="mailto:bc-kaufbeuren@gmx.de">bc-kaufbeuren@gmx.de</a>
             </p>
 
-            <h3>Vereinsregister</h3>
+            <h3>Geltungsbereich</h3>
             <p>
-                Eingetragen im Vereinsregister.<br>
-                Registergericht: Amtsgericht Kempten (Allgäu)
+                Dieses Impressum gilt auch für folgende Social-Media-Präsenzen:<br>
+                Instagram: <a href="https://www.instagram.com/boxclub_kaufbeuren/" target="_blank" rel="noopener noreferrer">https://www.instagram.com/boxclub_kaufbeuren/</a><br>
+                Facebook: <a href="https://www.facebook.com/boxclubkf/" target="_blank" rel="noopener noreferrer">https://www.facebook.com/boxclubkf/</a>
             </p>
 
-            <h3>Verbraucherstreitbeilegung / Universalschlichtungsstelle</h3>
+            <h3>Verbraucherstreitbeilegung/Universalschlichtungsstelle</h3>
             <p>
-                Wir sind nicht verpflichtet und nicht bereit, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+                Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+            </p>
+
+            <p style="margin-top: 25px; font-size: 0.8rem; color: #777;">
+                Quelle: <a href="https://www.e-recht24.de" target="_blank" rel="noopener noreferrer" style="color: #777;">e-recht24.de</a>
+            </p>
+        </section>
+
+        <!-- Datenschutzerklärung -->
+        <section class="legal-section">
+            <h2>Datenschutzerklärung</h2>
+
+            <h3>1. Datenschutz auf einen Blick</h3>
+            <p>
+                <strong>Allgemeine Hinweise:</strong> Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie unsere Website besuchen.
+            </p>
+
+            <h3>2. Verantwortliche Stelle</h3>
+            <p>
+                Verantwortlich für die Datenverarbeitung auf dieser Website ist:<br><br>
+                <strong>Boxclub Kaufbeuren e.V.</strong><br>
+                Porschestraße 22<br>
+                87600 Kaufbeuren<br>
+                E-Mail: <a href="mailto:bc-kaufbeuren@gmx.de">bc-kaufbeuren@gmx.de</a>
+            </p>
+
+            <h3>3. Datenerfassung auf unserer Website</h3>
+            <p>
+                <strong>Hosting über GitHub Pages:</strong><br>
+                Diese Website wird extern bei GitHub Inc. (88 Colin P Kelly Jr St, San Francisco, CA 94107, USA) gehostet. Wenn Sie unsere Website besuchen, erfasst GitHub temporär Server-Logfiles (wie z. B. Ihre IP-Adresse, Datum/Uhrzeit des Zugriffs und genutzter Browser). Dies ist zur sicheren Bereitstellung der Website technisch erforderlich (Art. 6 Abs. 1 lit. f DSGVO).
+            </p>
+            <p>
+                <strong>Kontaktaufnahme:</strong><br>
+                Wenn Sie uns per E-Mail oder Telefon kontaktieren, werden Ihre Angaben zwecks Bearbeitung der Anfrage verarbeitet (Art. 6 Abs. 1 lit. b bzw. f DSGVO).
+            </p>
+
+            <h3>4. Social Media (Instagram & Facebook)</h3>
+            <p>
+                Wir unterhalten Onlinepräsenzen auf Facebook und Instagram (Meta Platforms Ireland Limited, 4 Grand Canal Square, Dublin 2, Irland). Beim Besuch unserer Social-Media-Profile werden durch Meta personenbezogene Daten verarbeitet. Wir verlinken auf unserer Website lediglich auf diese Netzwerke; es werden beim bloßen Aufrufen unserer Website keine automatischen Plugins von Meta geladen, die bereits Daten an Meta übertragen.
+            </p>
+
+            <h3>5. Ihre Rechte</h3>
+            <p>
+                Sie haben jederzeit das Recht auf kostenlose Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft, Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Wenden Sie sich dazu einfach an die oben angegebene E-Mail-Adresse.
             </p>
         </section>
     </main>
