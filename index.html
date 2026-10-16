@@ -1,2 +1,167 @@
-Das ist die Startseite!!
-<a href="https://www.instagram.com/boxclub_kaufbeuren/">INSTAGRAM</a>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxclub Kaufbeuren e.V.</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            padding: 60px 20px 40px;
+            text-align: center;
+            background: linear-gradient(180deg, #1e1e1e 0%, #121212 100%);
+            border-bottom: 1px solid #2a2a2a;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #ffffff;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        p.subtitle {
+            color: #a0a0a0;
+            font-size: 1.1rem;
+            margin-bottom: 35px;
+        }
+        .cta-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .instagram-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            color: #ffffff;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 16px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(220, 39, 67, 0.4);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .instagram-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(220, 39, 67, 0.6);
+        }
+        .instagram-btn svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+        main {
+            flex: 1;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            width: 100%;
+        }
+        .impressum {
+            background-color: #1e1e1e;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #2a2a2a;
+            line-height: 1.6;
+        }
+        .impressum h2 {
+            color: #ffffff;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #dc2743;
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+        .impressum h3 {
+            color: #ffffff;
+            font-size: 1.1rem;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+        .impressum p {
+            color: #cccccc;
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666666;
+            font-size: 0.85rem;
+            border-top: 1px solid #2a2a2a;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Boxclub Kaufbeuren e.V.</h1>
+        <p class="subtitle">Willkommen auf unserer offiziellen Webseite</p>
+        
+        <!-- Instagram Button oben in der Mitte -->
+        <div class="cta-container">
+            <a href="https://www.instagram.com/boxclub_kaufbeuren/" target="_blank" rel="noopener noreferrer" class="instagram-btn">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+                Besucht uns auf Instagram
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="impressum">
+            <h2>Impressum</h2>
+
+            <h3>Angaben gemäß § 5 DDG</h3>
+            <p>
+                <strong>Box Club Kaufbeuren e. V.</strong><br>
+                Porschestraße 22<br>
+                87600 Kaufbeuren<br>
+                Deutschland
+            </p>
+
+            <h3>Vertreten durch</h3>
+            <p>
+                Vertretungsberechtigter Vorstand: Roman Slobodyanikov
+            </p>
+
+            <h3>Kontakt</h3>
+            <p>
+                E-Mail: bc-kaufbeuren@gmx.de<br>
+                Telefon: +49 (0) 176 64979152
+            </p>
+
+            <h3>Vereinsregister</h3>
+            <p>
+                Eingetragen im Vereinsregister.<br>
+                Registergericht: Amtsgericht Kempten (Allgäu)
+            </p>
+
+            <h3>Verbraucherstreitbeilegung / Universalschlichtungsstelle</h3>
+            <p>
+                Wir sind nicht verpflichtet und nicht bereit, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; <script>document.write(new Date().getFullYear())</script> Boxclub Kaufbeuren e.V. Alle Rechte vorbehalten.
+    </footer>
+
+</body>
+</html>
