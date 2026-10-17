@@ -25,16 +25,22 @@
             border-bottom: 1px solid #2a2a2a;
         }
         .logo-container {
-            margin-bottom: 20px;
-        }
-        .club-logo {
-            max-width: 220px;
-            height: auto;
-            filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.6));
+            margin-bottom: 25px;
+            display: inline-block;
+            background: #ffffff;
+            padding: 20px 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(255, 255, 255, 0.15), 0 4px 15px rgba(0, 0, 0, 0.5);
             transition: transform 0.3s ease;
         }
-        .club-logo:hover {
+        .logo-container:hover {
             transform: scale(1.03);
+        }
+        .club-logo {
+            max-width: 320px;
+            width: 100%;
+            height: auto;
+            display: block;
         }
         h1 {
             font-size: 2.2rem;
@@ -144,7 +150,7 @@
 <body>
 
     <header>
-        <!-- Vereins-Logo -->
+        <!-- Vereins-Logo mit weißem Kapsel-Hintergrund -->
         <div class="logo-container">
             <img src="logo.png" alt="Boxclub Kaufbeuren e.V. Logo" class="club-logo">
         </div>
